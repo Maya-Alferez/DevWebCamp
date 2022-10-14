@@ -18,6 +18,9 @@
     &__logo {
         @include m.logo;
         @include m.texto-fluido(2rem, 3rem);
-        margin: 0;
+        margin: 2rem 0;
+        @include m.tablet {
+            margin: 0;
+        }
     }
 }
