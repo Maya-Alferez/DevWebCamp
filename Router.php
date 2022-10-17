@@ -29,7 +29,7 @@ class Router
             $fn = $this->postRoutes[$url_actual] ?? null;
         }
 
-        if ( $fn ) {
+        if ($fn) {
             call_user_func($fn, $this);
         } else {
             echo "Página No Encontrada o Ruta no válida";
@@ -39,14 +39,17 @@ class Router
     public function render($view, $datos = [])
     {
         foreach ($datos as $key => $value) {
-            $$key = $value; 
+            $$key = $value;
         }
 
-        ob_start(); 
+        ob_start();
 
         include_once __DIR__ . "/views/$view.php";
 
         $contenido = ob_get_clean(); // Limpia el Buffer
+
+        //Utilizar el layout de acuerdo a la URL
+
 
         include_once __DIR__ . '/views/layout.php';
     }
