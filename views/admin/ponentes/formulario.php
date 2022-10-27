@@ -3,22 +3,22 @@
 
     <div class="formulario__campo">
         <label for="nombre" class="formulario__label">Nombre</label>
-        <input type="text" class="formulario__input" id="nombre" name="nombre" placeholder="Nombre ponente" value="<?php $ponente->nombre ?? ''; ?>">
+        <input type="text" class="formulario__input" id="nombre" name="nombre" placeholder="Nombre ponente" value="<?php echo $ponente->nombre ?? ''; ?>">
     </div>
 
     <div class="formulario__campo">
         <label for="apellido" class="formulario__label">Apellido</label>
-        <input type="text" class="formulario__input" id="apellido" name="apellido" placeholder="Apellido ponente" value="<?php $ponente->apellido ?? ''; ?>">
+        <input type="text" class="formulario__input" id="apellido" name="apellido" placeholder="Apellido ponente" value="<?php echo $ponente->apellido ?? ''; ?>">
     </div>
 
     <div class="formulario__campo">
         <label for="ciudad" class="formulario__label">Ciudad</label>
-        <input type="text" class="formulario__input" id="ciudad" name="ciudad" placeholder="Ciudad ponente" value="<?php $ponente->ciudad ?? ''; ?>">
+        <input type="text" class="formulario__input" id="ciudad" name="ciudad" placeholder="Ciudad ponente" value="<?php echo $ponente->ciudad ?? ''; ?>">
     </div>
 
     <div class="formulario__campo">
         <label for="pais" class="formulario__label">País</label>
-        <input type="text" class="formulario__input" id="pais" name="pais" placeholder="País ponente" value="<?php $ponente->pais ?? ''; ?>">
+        <input type="text" class="formulario__input" id="pais" name="pais" placeholder="País ponente" value="<?php echo $ponente->pais ?? ''; ?>">
     </div>
 
     <div class="formulario__campo">
