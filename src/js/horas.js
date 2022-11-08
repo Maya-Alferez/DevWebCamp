@@ -75,7 +75,7 @@
             inputHiddenHora.value = e.target.dataset.horaId;
 
             //Llenar el campo oculto de día
-            inputHiddenDia.value = document.querySelector(['name="dia"]:checked']).value;
+            inputHiddenDia.value = document.querySelector('[name="dia"]:checked').value;
         }
     }
 })();

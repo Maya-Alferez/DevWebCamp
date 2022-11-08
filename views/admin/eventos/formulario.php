@@ -49,10 +49,14 @@
 
 <fieldset class="formulario__fieldset">
     <legend class="formulario__legend">Información extra</legend>
+
     <div class="formulario__campo">
         <label for="ponentes" class="formulario__label">Ponente</label>
         <input type="text" class="formulario__input" id="ponentes" placeholder="Buscar ponente">
+        <ul id="listado-ponentes" class="listado-ponentes"></ul>
+        <input type="hidden" name="ponente_id" value="">
     </div>
+
     <div class="formulario__campo">
         <label for="disponibles" class="formulario__label">Lugares disponibles</label>
         <input type="number" min="1" class="formulario__input" id="disponibles" name="disponibles" placeholder="Ej. 20" value="<?php echo $evento->disponibles; ?>">
