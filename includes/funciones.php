@@ -14,7 +14,7 @@ function s($html): string
 }
 function pagina_actual($path): bool
 {
-    return str_contains($_SERVER['PATH_INFO'], $path) ? true : false;
+    return str_contains($_SERVER['PATH_INFO'] ?? '/', $path) ? true : false;
 }
 function is_auth(): bool
 {
@@ -30,3 +30,11 @@ function is_admin(): bool
     }
     return isset($_SESSION['admin']) && !empty($_SESSION['admin']);
 }
+
+//Función para dar efectos random, conforme vas dando scroll a la página
+//function aos_animation(): void
+//{
+    //$efectos = ['zoom-in', 'zoom-in-up', 'zoom-in-down', 'zoom-in-left', 'zoom-in-right'];
+    //$efecto = array_rand($efectos, 1);
+    //echo $efectos[$efecto];
+//}
