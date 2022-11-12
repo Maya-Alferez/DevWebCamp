@@ -9,7 +9,7 @@
             <picture>
                 <source srcset="/img/speakers/<?php echo $evento->ponente->imagen; ?>.webp" type="image/webp">
                 <source srcset="/img/speakers/<?php echo $evento->ponente->imagen; ?>.png" type="image/png">
-                <img class="evento__imagen-autor" loading="lazy" width="200" height="300" xsrc="/img/speakers/<?php echo $evento->ponente->imagen; ?>.png" alt="Imagen ponente">
+                <img class="evento__imagen-autor" loading="lazy" width="200" height="300" src="/img/speakers/<?php echo $evento->ponente->imagen; ?>.png" alt="Imagen ponente">
             </picture>
 
             <p class="evento__autor-nombre">
