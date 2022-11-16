@@ -48,6 +48,10 @@
                 <li class="paquete__elemento">Acceso a grabaciones</li>
             </ul>
             <p class="paquete__precio">$49.00</p>
+
+            <form method="POST" action="/finalizar-registro/pagar">
+                <input class="paquetes__submit" type="submit" value="Comprar pase">
+            </form>
         </div>
     </div>
 </main>
